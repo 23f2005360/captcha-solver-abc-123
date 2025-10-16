@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Captcha Solver Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Captcha Solver Demo</h1>
+  <p>Please solve the following captcha:</p>
+  <div id="captcha-container">
+    <img id="captcha-image" src="captcha-image.png" alt="Captcha Image" />
+    <button id="reload-captcha">Reload Captcha</button>
+  </div>
+  <form id="captcha-form">
+    <label for="captcha-input">Enter Captcha Text:</label>
+    <input type="text" id="captcha-input" name="captcha-input" autocomplete="off" required />
+    <button type="submit" id="submit-captcha">Submit</button>
+  </form>
+  <div id="result-message"></div>
+  <script src="script.js"></script>
+</body>
+</html>
